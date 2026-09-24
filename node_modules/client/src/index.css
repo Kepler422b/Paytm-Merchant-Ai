@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-700 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-paytm-navy font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-2xl border border-white/60 shadow-glass rounded-2xl md:rounded-3xl;
+  }
+
+  .btn-primary {
+    @apply bg-paytm-navy hover:bg-paytm-darkBlue text-white font-medium py-3 px-6 rounded-full transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-blue-50 text-paytm-blue border border-paytm-blue font-medium py-3 px-6 rounded-full transition-all flex items-center justify-center gap-2;
+  }
+}
